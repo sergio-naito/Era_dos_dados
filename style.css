@@ -1,0 +1,92 @@
+.stButton > button{
+    color: #FFFFFF;
+    background-color: #C60C35;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+}
+.stButton > button:hover{
+    color: #FFFFFF;
+    background-color: #920000;
+    border-color: #920000;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+}
+footer{
+    visibility: hidden;
+}
+
+header {visibility: hidden;}
+
+
+.st-d2{
+    border-bottom-color: #07a7f0; 
+    border-bottom-color: #0040ff;
+    border-top-color:  #0040ff;
+    border-right-color:#0040ff;
+    border-left-color:#0040ff;   
+} 
+
+.st-d3{
+    border-bottom-color: #07a7f0; 
+    border-bottom-color: #0040ff;
+    border-top-color:  #0040ff;
+    border-right-color:#0040ff;
+    border-left-color:#0040ff;   
+}
+
+.st-d0{
+    border-bottom-color: #07a7f0;
+    border-bottom-color: #0040ff;
+    border-top-color:  #0040ff;
+    border-right-color:#0040ff;
+    border-left-color:#0040ff;    
+} 
+
+.st-d1{
+    border-bottom-color: #07a7f0;  
+    border-bottom-color: #0040ff;
+    border-top-color:  #0040ff;
+    border-right-color:#0040ff;
+    border-left-color:#0040ff;  
+}
+
+/* input:hover{
+    border-bottom-color: #0040ff;
+    border-top-color:  #0040ff;
+    border-right-color:#0040ff;
+    border-left-color:#0040ff;
+    } */
+
+
+#MainMenu{
+    visibility: hidden;
+}
+
+.stMarkdown{
+    text-align: center;
+}
+
+
+/* p{
+    color:rgb(10, 75, 140);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Bree Serif', serif;
+} */
+
+.css-18e3th9 {
+    flex: 1 1 0%;
+    width: 100%;
+    padding: 6rem 1rem 10rem;
+    min-width: auto;
+    max-width: initial;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    vertical-align: center;
+    
+}
