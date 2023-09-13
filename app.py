@@ -39,7 +39,7 @@ def main():
     
     with st.sidebar:
             style.sidebarwidth() 
-            page = option_menu('Menu', ["Home","ChatGPT"],
+            page = option_menu('Menu', ["Home","ChatGPT","ChatBase"],
                                     icons=['house','bullseye'],
                                     default_index=0, menu_icon="app-indicator",   #orientation='horizontal',
                                 ) 
