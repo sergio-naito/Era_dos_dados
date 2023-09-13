@@ -61,18 +61,18 @@ def main():
 
     stc.html(HTML_BANNER)
 
-    stc.html(HTML_BANNER2)
+    stc.html(HTML_BANNER1)
 
 
-"""
+
     # Cria uma barra lateral na aplicação Streamlit para inserir a chave da API da OpenAI
     with st.sidebar:
         openai_api_key = st.text_input("Adicione a Chave da API da OpenAI", type="password")
         
 
     # Se a chave "messages" não estiver presente no estado da sessão, inicializa com uma mensagem padrão do assistente
-    if "messages" not in st.session_state:
-        st.session_state["messages"] = [ChatMessage(role="assistant", content="Bem vindo? Como posso ajudar?")]
+    ##Sif "messages" not in st.session_state:
+    ##s    st.session_state["messages"] = [ChatMessage(role="assistant", content="Bem vindo? Como posso ajudar?")]
     
     # Exibe as mensagens do chat armazenadas no estado da sessão
     for msg in st.session_state.messages:
@@ -85,9 +85,9 @@ def main():
         st.chat_message("user").write(prompt)
 
         # Se a chave da API da OpenAI não foi fornecida, exibe uma mensagem informativa e interrompe
-        if not openai_api_key:
-            st.info("Gentileza, adicione sua chave da API da OpenAI para continuar.")
-            st.stop()
+        ##sif not openai_api_key:
+        ##s    st.info("Gentileza, adicione sua chave da API da OpenAI para continuar.")
+        ##s    st.stop()
 
         # Gera uma resposta usando o modelo de linguagem e exibe como mensagem do assistente
         with st.chat_message("assistant"):
@@ -101,4 +101,3 @@ def main():
             response = llm(st.session_state.messages)
             st.session_state.messages.append(ChatMessage(role="assistant", content=response.content))
 
-"""    
