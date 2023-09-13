@@ -38,6 +38,15 @@ HTML_BANNER1 = """
     </script>
     """
 
+HTML_BANNER2 = """
+    <iframe
+    src="https://www.chatbase.co/chatbot-iframe/l_Je4sUJN7THZ-GoO3ir6"
+    width="100%"
+    style="height: 100%; min-height: 700px"
+    frameborder="0"
+    ></iframe>
+"""
+
 
 HTML_BANNER = """
     <div style="background-color:#464e5f;padding:10px;border-radius:10px">
@@ -47,11 +56,12 @@ HTML_BANNER = """
 
 def main():
 
-    st.write('teste de inclusão do chatbase')
+    #st.write('teste de inclusão do chatbase')
 
-    stc.html(HTML_BANNER1)
 
     stc.html(HTML_BANNER)
+
+    stc.html(HTML_BANNER2)
 
 
 """
