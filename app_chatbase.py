@@ -22,14 +22,32 @@ class StreamHandler(BaseCallbackHandler):
         self.text += token
         self.container.markdown(self.text)
         
-        
+
+HTML_BANNER1 = """
+<script>
+window.embeddedChatbotConfig = {
+chatbotId: "l_Je4sUJN7THZ-GoO3ir6",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="l_Je4sUJN7THZ-GoO3ir6"
+domain="www.chatbase.co"
+defer>
+</script>
+"""
+
+
 HTML_BANNER = """
     <div style="background-color:#464e5f;padding:10px;border-radius:10px">
-    <h1 style="color:white;text-align:center;">A Era Do Cientista de Dados</h1>
+    <h1 style="color:white;text-align:center;">Chatbt AI ChatBase</h1>
     </div>
     """
 
 def main():
+
+    stc.html(HTML_BANNER1)
 
     stc.html(HTML_BANNER)
 
