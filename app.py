@@ -4,6 +4,7 @@ import style as style
 from streamlit_option_menu import option_menu
 import app_chat
 import app_home
+import app_chatbase
 
 
 st.set_page_config(  # Alternate names: setup_page, page, layout
