@@ -24,19 +24,19 @@ class StreamHandler(BaseCallbackHandler):
         
 
 HTML_BANNER1 = """
-<script>
-window.embeddedChatbotConfig = {
-chatbotId: "l_Je4sUJN7THZ-GoO3ir6",
-domain: "www.chatbase.co"
-}
-</script>
-<script
-src="https://www.chatbase.co/embed.min.js"
-chatbotId="l_Je4sUJN7THZ-GoO3ir6"
-domain="www.chatbase.co"
-defer>
-</script>
-"""
+    <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "l_Je4sUJN7THZ-GoO3ir6",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="l_Je4sUJN7THZ-GoO3ir6"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+    """
 
 
 HTML_BANNER = """
@@ -47,10 +47,14 @@ HTML_BANNER = """
 
 def main():
 
+    st.write('teste de inclusão do chatbase')
+
     stc.html(HTML_BANNER1)
 
     stc.html(HTML_BANNER)
 
+
+"""
     # Cria uma barra lateral na aplicação Streamlit para inserir a chave da API da OpenAI
     with st.sidebar:
         openai_api_key = st.text_input("Adicione a Chave da API da OpenAI", type="password")
@@ -63,7 +67,6 @@ def main():
     # Exibe as mensagens do chat armazenadas no estado da sessão
     for msg in st.session_state.messages:
         st.chat_message(msg.role).write(msg.content)
-
     # Verifica se o usuário inseriu uma nova mensagem
     if prompt := st.chat_input():
         # Adiciona a mensagem do usuário ao estado da sessão
@@ -88,4 +91,4 @@ def main():
             response = llm(st.session_state.messages)
             st.session_state.messages.append(ChatMessage(role="assistant", content=response.content))
 
-    st.write('teste de inclusão do chatbase')
+"""    
