@@ -32,6 +32,7 @@ def main():
     
     pages={
         "ChatGPT":page_chat,
+        "ChatBase":page_chatbase,
         "Conjunto de dados":page_analise,
         "Home":home
             
