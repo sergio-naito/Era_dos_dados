@@ -63,6 +63,9 @@ def home():
 def page_chat():
      app_chat.main()  
 
+def page_chatbase():
+     app_chatbase.main()  
+
 def page_analise():
      #app_home.home()
      st.write('Feito com Carinho ')
